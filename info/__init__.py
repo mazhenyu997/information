@@ -5,7 +5,7 @@ import logging
 from flask_wtf import CSRFProtect
 from flask_wtf.csrf import generate_csrf
 from redis import StrictRedis
-
+from info.utils.common import do_index_class
 from config import Config, config
 from flask.ext.session import Session
 from flask_sqlalchemy import SQLAlchemy
@@ -47,6 +47,9 @@ def create_app(config_name):
 
     # CSRFProtect(app)
     Session(app)
+
+    # 添加自定义过滤器
+    app.add_template_filter(do_index_class, "index_class")
 
     @app.after_request
     def after_request(response):
