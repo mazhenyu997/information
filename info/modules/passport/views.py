@@ -57,6 +57,14 @@ def login():
     session["mobile"] = cur_user.mobile
     session["nick_name"] = cur_user.nick_name
 
+    # 记录用户最后登陆的时间
+    cur_user.last_login = datetime.now()
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存数据失败")
     return jsonify(errno=RET.OK, errmsg="登陆成功")
 
 

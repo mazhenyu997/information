@@ -3,6 +3,7 @@ from logging.handlers import RotatingFileHandler
 from flask import Flask
 import logging
 from flask_wtf import CSRFProtect
+from flask_wtf.csrf import generate_csrf
 from redis import StrictRedis
 
 from config import Config, config
@@ -46,6 +47,12 @@ def create_app(config_name):
 
     # CSRFProtect(app)
     Session(app)
+
+    @app.after_request
+    def after_request(response):
+        csrf_token = generate_csrf()
+        response.set_cookie("csrf_token", csrf_token)
+        return response
 
     # 注册蓝图
     from info.modules.index import index_blu

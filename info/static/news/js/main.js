@@ -118,6 +118,9 @@ $(function(){
             url:"/passport/login",
             type:"post",
             contentType:"application/json",
+            header:{
+              "XCSRFToken":getCookie("csrf_token")
+            },
             data:JSON.stringify(params),
             success:function (resp) {
                 if (resp.errno=="0"){
