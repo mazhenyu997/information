@@ -11,11 +11,10 @@ from manage import app
 
 @index_blu.route('/news_list')
 def news_list():
-
     # 新闻分类cid
     try:
 
-        cid = request.args.get("cid", "1")
+        cid = int(request.args.get("cid", "1"))
         page = int(request.args.get("page", "1"))
         per_page = int(request.args.get("per_page", "10"))
     except Exception as e:
@@ -27,12 +26,13 @@ def news_list():
         filters.append(News.category_id == cid)
     try:
         news_data = News.query.filter(*filters).order_by(News.create_time.desc())
+        print(news_data)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="查询错误")
 
     paginate = news_data.paginate(page, per_page, False)
-
+    print(paginate)
     news_list_data = paginate.items
     total_page = paginate.pages
     cur_page = paginate.page
@@ -40,6 +40,7 @@ def news_list():
     # 模型对象转成字典列表
     news_dict_list = []
     for news in news_list_data:
+        print(news)
         news_dict_list.append(news.to_basic_dict())
 
     data = {
@@ -47,6 +48,7 @@ def news_list():
         "current_page":cur_page,
         "news_dict_li":news_dict_list
     }
+    print(news_dict_list)
 
     return jsonify(errno=RET.OK, errmsg="ok", data=data)
 
