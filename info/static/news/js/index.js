@@ -74,7 +74,7 @@ function updateNewsData() {
                 $(".list_con").html("");
             }
 
-
+            cur_page += 1
             //添加请求成功之后返回的数据
             for (var i=0;i<resp.data.news_dict_li.length;i++) {
                 var news =  resp.data.news_dict_li[i]

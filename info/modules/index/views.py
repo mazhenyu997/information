@@ -21,14 +21,21 @@ def news_list():
         current_app.logger.error(e)
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
-    filters = []
     if cid != 1:  # 不查询最新的数据
-        filters.append(News.category_id == cid)
-    try:
-        news_data = News.query.filter(*filters).order_by(News.create_time.desc())
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询错误")
+
+        try:
+            news_data = News.query.filter(News.category_id == cid).order_by(News.create_time.desc())
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询错误")
+
+    else:
+        try:
+            news_data = News.query.order_by(News.create_time.desc())
+
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询错误")
 
     paginate = news_data.paginate(page, per_page, False)
     news_list_data = paginate.items
@@ -45,7 +52,7 @@ def news_list():
         "current_page":cur_page,
         "news_dict_li":news_dict_list
     }
-
+    print(data)
     return jsonify(errno=RET.OK, errmsg="ok", data=data)
 
 
