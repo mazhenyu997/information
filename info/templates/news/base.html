@@ -21,11 +21,11 @@
 
 
             {# 判断用户是否登录 #}
-            {% if data.user_info %}
+            {% if data.user %}
                 {# 如果登录，则显示用户信息 #}
                 <div class="user_login fr">
-                    <img src="{% if data.user_info.avatar_url %} {{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
-                    <a id="nick_name" href="/user/info">{{ data.user_info.nick_name }}</a>
+                    <img src="{% if data.user.avatar_url %} {{ data.user.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
+                    <a id="nick_name" href="/user/info">{{ data.user.nick_name }}</a>
                     <a href="javascript:;" onclick="logout()">退出</a>
                 </div>
             {% else %}
@@ -51,7 +51,7 @@
                     <h3>点击排行</h3>
                 </div>
                 <ul class="rank_list">
-                    {% for news in data.click_news_list %}
+                    {% for news in data.news_dict_li %}
                         <li><span class="{{ loop.index0 | index_class }}">{{ loop.index }}</span><a href="/news/{{ news.id }}" target="_blank">{{ news.title }}</a></li>
                     {% endfor %}
                 </ul>

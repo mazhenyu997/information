@@ -1,8 +1,9 @@
 
-from flask import render_template, request, jsonify
+from flask import render_template, request, jsonify, g
 from flask import current_app
 
-from info.models import User, News
+from info.models import User, News, Category
+from info.utils.common import user_login_data
 from info.utils.response_code import RET
 from . import index_blu
 from flask import session
@@ -52,21 +53,14 @@ def news_list():
         "current_page":cur_page,
         "news_dict_li":news_dict_list
     }
-    print(data)
+
     return jsonify(errno=RET.OK, errmsg="ok", data=data)
 
 
 @index_blu.route('/')
+@user_login_data
 def index():
 
-    user_id = session.get("user_id", None)
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-
-        except Exception as e:
-            current_app.logger.error(e)
     # 右侧新闻的逻辑
     news_right_list = []
     try:
@@ -79,9 +73,23 @@ def index():
     for news in news_right_list:
         news_dict_list.append(news.to_basic_dict())
 
+    # 获取新闻分类数据
+    categories = Category.query.all()
+    # 定义列表保存分类数据
+    categories_dicts = []
+
+    for i, category in enumerate(categories):
+        # 获取字典
+        cate_dict = category.to_dict()
+        # 设置是否选中
+        cate_dict['active'] = True if i == 0 else False
+        # 拼接内容
+        categories_dicts.append(cate_dict)
+
     data = {
-        "user": user.to_dict() if user else None,
-        "news_dict_li": news_dict_list
+        "user": g.user.to_dict() if g.user else None,
+        "news_dict_li": news_dict_list,
+        "categories": categories_dicts
     }
     return render_template("news/index.html", data=data)
 
@@ -89,3 +97,5 @@ def index():
 @index_blu.route('/favicon.ico')
 def favicon():
     return app.send_static_file('news/favicon.ico')
+
+

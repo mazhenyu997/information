@@ -22,7 +22,6 @@
     <a href="javascript:;" class="collection block-center" data-newid="{{ data.news.id }}" style="display: {% if data.is_collected %} none
             {% else %} block {% endif %};">收藏</a>
 
-
     {% if data.user_info %}
         <form action="" class="comment_form" data-newsid="{{ data.news.id }}">
             <input type="hidden" value="{{ data.news.id }}" id="news_id">
