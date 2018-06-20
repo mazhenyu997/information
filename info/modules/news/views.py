@@ -1,5 +1,5 @@
 from info import db
-from info.models import News
+from info.models import News, Comment
 from info.modules.news import news_blu
 from flask import render_template, current_app, abort, g, request, jsonify
 
@@ -76,3 +76,50 @@ def news_collect():
         db.session.rollback()
         return jsonify(errno=RET.DBERR, errmsg="保存失败")
     return jsonify(errno=RET.OK, errmsg="操作成功")
+
+
+@news_blu.route('/news_comment', methods=["post"])
+def comment_news():
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
+    news_id = request.json.get("news_id")
+    comment_content = request.json.get("comment_content")
+    parent_id = request.json.get("parent_id")
+
+    if not all([news_id, comment_content]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        news_id = int(news_id)
+        if parent_id:
+            parent_id = int(parent_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据失败")
+
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="新闻数据不存在")
+
+    comment = Comment()
+    comment.user_id = user.id
+    comment.news_id = news_id
+    comment.content = comment_content
+    if parent_id:
+        comment.parent_id = parent_id
+    try:
+        db.session.add(comment)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+
+    return jsonify(errno=RET.OK, errmsg="ok", comment=comment.to_dict())
+
