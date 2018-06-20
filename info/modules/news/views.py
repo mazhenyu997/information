@@ -39,11 +39,23 @@ def news_detail(news_id):
     if g.user:
         if news in g.user.collection_news:
             is_collected = True
+
+    comments = []
+    try:
+        comments = Comment.query.filter(Comment.news_id==news_id).order_by(Comment.create_time.desc()).all()
+    except Exception as e:
+        current_app.logger.error(e)
+    comment_dict_li = []
+    for comment in comments:
+        comment_dict = comment.to_dict()
+        comment_dict_li.append(comment_dict)
+
     data = {
         "news": news.to_dict(),
         "is_collected": is_collected,
         "user": g.user.to_dict() if g.user else None,
-        "news_dict_li": news_dict_list
+        "news_dict_li": news_dict_list,
+        "comments": comment_dict_li
     }
     return render_template('news/detail.html', data=data)
 
@@ -90,6 +102,7 @@ def news_collect():
     return jsonify(errno=RET.OK, errmsg="操作成功")
 
 
+# 新闻评论
 @news_blu.route('/news_comment', methods=["POST"])
 @user_login_data
 def comment_news():
