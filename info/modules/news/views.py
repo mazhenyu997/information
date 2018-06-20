@@ -10,6 +10,17 @@ from info.utils.response_code import RET
 @news_blu.route("/<int:news_id>")
 @user_login_data
 def news_detail(news_id):
+    # 右侧新闻的逻辑
+    news_right_list = []
+    try:
+        news_right_list = News.query.order_by(News.clicks.desc()).limit(6)
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 将列表中的对象转为列表中的字典
+    news_dict_list = []
+    for news in news_right_list:
+        news_dict_list.append(news.to_basic_dict())
 
     try:
         news = News.query.get(news_id)
@@ -32,6 +43,7 @@ def news_detail(news_id):
         "news": news.to_dict(),
         "is_collected": is_collected,
         "user": g.user.to_dict() if g.user else None,
+        "news_dict_li": news_dict_list
     }
     return render_template('news/detail.html', data=data)
 
@@ -78,14 +90,15 @@ def news_collect():
     return jsonify(errno=RET.OK, errmsg="操作成功")
 
 
-@news_blu.route('/news_comment', methods=["post"])
+@news_blu.route('/news_comment', methods=["POST"])
+@user_login_data
 def comment_news():
     user = g.user
     if not user:
         return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
 
     news_id = request.json.get("news_id")
-    comment_content = request.json.get("comment_content")
+    comment_content = request.json.get("comment")
     parent_id = request.json.get("parent_id")
 
     if not all([news_id, comment_content]):
@@ -121,5 +134,5 @@ def comment_news():
         current_app.logger.error(e)
         db.session.rollback()
 
-    return jsonify(errno=RET.OK, errmsg="ok", comment=comment.to_dict())
+    return jsonify(errno=RET.OK, errmsg="ok", data=comment.to_dict())
 
