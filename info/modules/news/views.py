@@ -150,7 +150,7 @@ def comment_news():
     return jsonify(errno=RET.OK, errmsg="ok", data=comment.to_dict())
 
 
-@news_blu.route('/news_like', methods=['POST'])
+@news_blu.route('/comment_like', methods=['POST'])
 @user_login_data
 def comment_like():
     """
@@ -160,13 +160,13 @@ def comment_like():
     user = g.user
     json_data = request.json
     comment_id = json_data.get("comment_id")
-    news_id = json_data.get("news_id")
+    # news_id = json_data.get("news_id")
     action = json_data.get("action")
 
     if not user:
         return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
 
-    if not all([news_id, comment_id, action]):
+    if not all([ comment_id, action]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
     if action not in ["add", "remove"]:
@@ -174,7 +174,7 @@ def comment_like():
 
     try:
         comment_id = int(comment_id)
-        news_id = int(news_id)
+        # news_id = int(news_id)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
@@ -200,7 +200,8 @@ def comment_like():
         # 取消点赞
         comment_like_model = CommentLike.query.filter(CommentLike.user_id==user.id, CommentLike.comment_id==comment.id).first()
         if comment_like_model:
-            comment_like_model.delete()
+            db.session.delete(comment_like_model)
+            comment.like_count -= 1
     try:
         db.session.commit()
     except Exception as e:
