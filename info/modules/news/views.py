@@ -45,9 +45,19 @@ def news_detail(news_id):
         comments = Comment.query.filter(Comment.news_id==news_id).order_by(Comment.create_time.desc()).all()
     except Exception as e:
         current_app.logger.error(e)
+    if g.user:
+        # 查询当前用户在当前新闻有那些被点赞过
+        comment_ids = [comment.id for comment in comments]
+        comment_likes = CommentLike.query.filter(CommentLike.comment_id.in_(comment_ids), CommentLike.user_id==g.user.id).all()
+        comment_like_ids = [comment_like.comment_id for comment_like in comment_likes]
+
     comment_dict_li = []
     for comment in comments:
         comment_dict = comment.to_dict()
+        comment_dict["is_like"] = False
+        if g.user:
+            if comment.id in comment_like_ids:
+                comment_dict["is_like"] = True
         comment_dict_li.append(comment_dict)
 
     data = {
