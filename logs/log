@@ -7164,3 +7164,11 @@ INFO _internal.py:88 127.0.0.1 - - [23/Jun/2018 19:38:25] "GET /favicon.ico HTTP
 INFO _internal.py:88 127.0.0.1 - - [23/Jun/2018 19:38:25] "GET /favicon.ico HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [23/Jun/2018 19:38:26] "GET /user/pic_info HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [23/Jun/2018 19:38:26] "GET /user/pic_info HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/profile/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/profile/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 234-623-099
+INFO _internal.py:88  * Debugger PIN: 234-623-099
