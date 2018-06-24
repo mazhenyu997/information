@@ -127,3 +127,41 @@ def pass_info():
     user.password = new_password
 
     return jsonify(errno=RET.OK, errmsg="修改成功")
+
+
+# 用户收藏
+@profile_blu.route('/collection', methods=["POST", "GET"])
+@user_login_data
+def collection():
+
+    page = request.args.get('page', 1)
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+        page = 1
+
+    # 查询
+    user = g.user
+    total_page = 1
+    cur_page = 1
+    try:
+        paginate = user.collection_news.paginate(page, 10, False)
+        cur_page = paginate.page
+        total_page = paginate.pages
+        news_li = paginate.items
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_li = []
+
+    for news in news_li:
+        news_dict_li.append(news.to_dict())
+
+    data = {
+        "current_page": cur_page,
+        "total_page": total_page,
+        "collections": news_dict_li
+    }
+    return render_template("news/user_collection.html", data=data)
