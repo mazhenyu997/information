@@ -12,6 +12,7 @@ from info.utils.image_storage import storage
 from info.utils.response_code import RET
 
 
+# 用户中心首页
 @profile_blu.route('/info')
 @user_login_data
 def user_info():
@@ -25,6 +26,7 @@ def user_info():
     return render_template("news/user.html", data=data)
 
 
+# 基本信息展示
 @profile_blu.route('/base_info', methods=["POST", "GET"])
 @user_login_data
 def base_info():
@@ -54,6 +56,7 @@ def base_info():
     return jsonify(errno=RET.OK, errmsg="OK")
 
 
+# 上传头像
 @profile_blu.route('/pic_info', methods=["GET", "POST"])
 @user_login_data
 def pic_info():
@@ -100,3 +103,27 @@ def pic_info():
 
     # 4. 返回上传的结果<avatar_url>
     return jsonify(errno=RET.OK, errmsg="OK", data={"avatar_url": avatar_url})
+
+
+# 修改密码
+@profile_blu.route('/pass_info', methods=["POST", "GET"])
+@user_login_data
+def pass_info():
+
+    if request.method == "GET":
+        data = {}
+        return render_template("news/user_pass_info.html", data=data)
+
+    old_password = request.json.get("old_password", '')
+    new_password = request.json.get("new_password", '')
+
+    if not all([old_password, new_password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    user = g.user
+    if not user.check_passowrd(old_password):
+        return jsonify(errno=RET.PWDERR, errmsg="密码错误")
+
+    user.password = new_password
+
+    return jsonify(errno=RET.OK, errmsg="修改成功")
