@@ -10086,3 +10086,823 @@ WARNING _internal.py:88  * Debugger is active!
 WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 219-218-342
 INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/__init__.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:05:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:05:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:05:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:05:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:06] "GET /login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:06] "GET /login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:06:17] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:18] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:18] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:25] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:25] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:32] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:36:32] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:18] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:18] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:23] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:23] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:23] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:23] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:28] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:28] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:35] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:35] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:42] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:42] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:49] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:49] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:59] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:39:59] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:40:39] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:42:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:29] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:29] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:34] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:34] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:34] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:34] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:41] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:45:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:01] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:14] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:14] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:19] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:19] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:46:44] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:51:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:21] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:21] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:53:22] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:24] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:57:52] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:58:55] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:58:55] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:17] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:18] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/html/user_count.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/html/user_count.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 20:59:46] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:39] "GET /admin/admin HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:39] "GET /admin/admin HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:00:45] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:01:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:00] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:02:10] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:08] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:37] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:06:37] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:09:09] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "POST /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:48] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:48] "POST /admin/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:58] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:58] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:58] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:58] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:59] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:18:59] "POST /admin/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:12] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:12] "POST /admin/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:17] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:17] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:17] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:17] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:34] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:34] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:40] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:19:40] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:03] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:27] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:21:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:40] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:22:57] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:04] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:09] "GET /admin HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:09] "GET /admin HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:14] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:42] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:43] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:48] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:58] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:23:58] "POST /admin/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:25] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:25] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:25] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:25] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:28] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:28] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:38] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:38] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:38] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:38] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:46] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:46] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:50] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:50] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:56] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:24:56] "POST /admin/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:14] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:14] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:14] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:14] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:18] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:18] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:26] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:28] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:29] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:33] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:43] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:43] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:52] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:25:52] "POST /admin/login HTTP/1.1" 400 -
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88  * Debugger PIN: 219-218-342
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "POST /admin/login HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "POST /admin/login HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/html/user_count.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/html/user_count.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [26/Jun/2018 21:26:21] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
