@@ -4,6 +4,7 @@ import time
 
 from info import db
 from info.constants import QINIU_DOMIN_PREFIX
+from info.models import Category
 from info.modules.profile import profile_blu
 from flask import render_template, g, redirect, request, jsonify, current_app
 
@@ -165,3 +166,30 @@ def collection():
         "collections": news_dict_li
     }
     return render_template("news/user_collection.html", data=data)
+
+
+# 新闻发布
+@profile_blu.route('/news_release', methods=["POST", "GET"])
+@user_login_data
+def news_release():
+
+    # 查询新闻分类的数据
+    try:
+        categories = Category.query.all()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    category_dict_li = []
+    for category in categories:
+        if category.id != 1:
+            category_dict_li.append(category.to_dict())
+    try:
+        pass
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    data = {
+        "categories": category_dict_li,
+    }
+    return render_template("news/user_news_release.html", data=data)
