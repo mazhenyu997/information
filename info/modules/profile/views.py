@@ -4,7 +4,7 @@ import time
 
 from info import db
 from info.constants import QINIU_DOMIN_PREFIX
-from info.models import Category
+from info.models import Category, News
 from info.modules.profile import profile_blu
 from flask import render_template, g, redirect, request, jsonify, current_app
 
@@ -169,27 +169,113 @@ def collection():
 
 
 # 新闻发布
-@profile_blu.route('/news_release', methods=["POST", "GET"])
+@profile_blu.route('/news_release', methods=["GET", "POST"])
 @user_login_data
 def news_release():
+    if request.method == "GET":
+        categories = None
+        try:
+            # 获取所有的分类数据
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.error(e)
 
-    # 查询新闻分类的数据
+        # 定义列表保存分类数据
+        categories_dicts = []
+
+        for category in categories if categories else []:
+            # 获取字典
+            cate_dict = category.to_dict()
+            # 拼接内容
+            categories_dicts.append(cate_dict)
+
+        # 移除`最新`分类
+        categories_dicts.pop(0)
+        # 返回内容
+        return render_template('news/user_news_release.html', data={"categories": categories_dicts})
+
+    # POST 提交，执行发布新闻操作
+
+    # 1. 获取要提交的数据
+    title = request.form.get("title")
+    source = "个人发布"
+    digest = request.form.get("digest")
+    content = request.form.get("content")
+    index_image = request.files.get("index_image")
+    category_id = request.form.get("category_id")
+    # 1.1 判断数据是否有值
+    if not all([title, source, digest, content, index_image, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+
+    '''
+    # 1.2 尝试读取图片
     try:
-        categories = Category.query.all()
+        index_image = index_image.read()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+
+    # 2. 将标题图片上传到七牛
+    try:
+        key = storage(index_image)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="上传图片错误")
+    '''
+    # 3. 初始化新闻模型，并设置相关数据
+    news = News()
+    news.title = title
+    news.digest = digest
+    news.source = source
+    news.content = content
+    news.index_image_url = "https://postimg.cc/image/ioj6dke2z/"
+    news.category_id = category_id
+    news.user_id = g.user.id
+    news.status = 1
+
+    # 4. 保存到数据库
+    try:
+        db.session.add(news)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存数据失败")
+    # 5. 返回结果
+    return jsonify(errno=RET.OK, errmsg="发布成功，等待审核")
+
+
+# 新闻列表
+@profile_blu.route('/news_list')
+@user_login_data
+def news_list():
+    # 获取页数
+    p = request.args.get("p", 1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+
+    user = g.user
+    total_page = 1
+    current_page = 1
+    news_li = []
+    try:
+        paginate = News.query.filter(News.user_id == user.id).paginate(p, 6, False)
+        # 获取当前页数据
+        news_li = paginate.items
+        # 获取当前页
+        current_page = paginate.page
+        # 获取总页数
+        total_page = paginate.pages
     except Exception as e:
         current_app.logger.error(e)
 
-    category_dict_li = []
-    for category in categories:
-        if category.id != 1:
-            category_dict_li.append(category.to_dict())
-    try:
-        pass
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+    news_dict_li = []
 
-    data = {
-        "categories": category_dict_li,
-    }
-    return render_template("news/user_news_release.html", data=data)
+    for news_item in news_li:
+        news_dict_li.append(news_item.to_review_dict())
+    data = {"news_list": news_dict_li, "total_page": total_page, "current_page": current_page}
+    return render_template('news/user_news_list.html', data=data)
+

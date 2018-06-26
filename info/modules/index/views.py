@@ -25,14 +25,14 @@ def news_list():
     if cid != 1:  # 不查询最新的数据
 
         try:
-            news_data = News.query.filter(News.category_id == cid).order_by(News.create_time.desc())
+            news_data = News.query.filter(News.category_id == cid, News.status == 0).order_by(News.create_time.desc())
         except Exception as e:
             current_app.logger.error(e)
             return jsonify(errno=RET.DBERR, errmsg="查询错误")
 
     else:
         try:
-            news_data = News.query.order_by(News.create_time.desc())
+            news_data = News.query.filter(News.status == 0).order_by(News.create_time.desc())
 
         except Exception as e:
             current_app.logger.error(e)
