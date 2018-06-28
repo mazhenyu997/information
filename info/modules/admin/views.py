@@ -126,7 +126,7 @@ def user_list():
 
     user_dict_li = []
     for user in user_list:
-        user_dict_li.append(user.to_dict())
+        user_dict_li.append(user.to_admin_dict())
 
     data = {
         "user_dict_li": user_dict_li,
