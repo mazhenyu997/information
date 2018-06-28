@@ -45,7 +45,7 @@ def create_app(config_name):
 
     # csrf保护 只做服务器验证功能
 
-    # CSRFProtect(app)
+    CSRFProtect(app)
     Session(app)
 
     # 添加自定义过滤器
