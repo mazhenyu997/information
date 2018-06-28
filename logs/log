@@ -11042,3 +11042,7 @@ WARNING _internal.py:88  * Debugger is active!
 WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 234-623-099
 INFO _internal.py:88  * Debugger PIN: 234-623-099
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/__init__.py', reloading
+INFO _internal.py:88  * Detected change in '/Users/mazhenyu/code/flask/information_github/info/modules/admin/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
