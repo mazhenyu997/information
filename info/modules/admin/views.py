@@ -1,3 +1,6 @@
+from datetime import datetime
+import time
+
 from info.modules.admin import admin_blu
 from flask import render_template, request, jsonify, current_app, session, redirect, url_for, g
 from info.models import User
@@ -50,4 +53,36 @@ def login():
 
     return redirect('/admin/index')
 
+
+@admin_blu.route("/user_count")
+def user_count():
+    total_count = 0
+    mon_count = 0
+    day_count = 0
+    try:
+        total_count = User.query.filter(User.is_admin==False).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    time_now = time.localtime()
+    begin_mon_date = datetime.strptime(("%d-%02d-01" % (time_now.tm_year, time_now.tm_mon)), "%Y-%m-%d")
+
+    try:
+        mon_count = User.query.filter(User.is_admin==False, User.create_time > begin_mon_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    begin_day_date = datetime.strptime(("%d-%02d-%02d" % (time_now.tm_year, time_now.tm_mon, time_now.tm_mday)), "%Y-%m-%d")
+    try:
+        day_count = User.query.filter(User.is_admin == False, User.create_time > begin_day_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    data = {
+        "total_count": total_count,
+        "mon_count": mon_count,
+        "day_count": day_count,
+    }
+
+    return render_template("admin/user_count.html", data=data)
 
