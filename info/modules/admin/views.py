@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 
 from info.modules.admin import admin_blu
@@ -59,11 +59,12 @@ def user_count():
     total_count = 0
     mon_count = 0
     day_count = 0
+    # 所有用户
     try:
         total_count = User.query.filter(User.is_admin==False).count()
     except Exception as e:
         current_app.logger.error(e)
-
+    # 月新增用户
     time_now = time.localtime()
     begin_mon_date = datetime.strptime(("%d-%02d-01" % (time_now.tm_year, time_now.tm_mon)), "%Y-%m-%d")
 
@@ -71,17 +72,33 @@ def user_count():
         mon_count = User.query.filter(User.is_admin==False, User.create_time > begin_mon_date).count()
     except Exception as e:
         current_app.logger.error(e)
-
+    # 日新增
     begin_day_date = datetime.strptime(("%d-%02d-%02d" % (time_now.tm_year, time_now.tm_mon, time_now.tm_mday)), "%Y-%m-%d")
     try:
         day_count = User.query.filter(User.is_admin == False, User.create_time > begin_day_date).count()
     except Exception as e:
         current_app.logger.error(e)
 
+    # 折线图数据
+    active_time = []
+    active_count = []
+    begin_today_date = datetime.strptime('%d-%02d-%02d' % (time_now.tm_year, time_now.tm_mon, time_now.tm_mday), "%Y-%m-%d")
+    for i in range(0, 31):
+        begin_date = begin_today_date - timedelta(days=i)
+        end_date = begin_today_date - timedelta(days=(i-1))
+        count = User.query.filter(User.is_admin == False, User.last_login >= begin_date, User.last_login < end_date).count()
+        active_count.append(count)
+        active_time.append(begin_date.strftime("%Y-%m-%d"))
+
+    active_time.reverse()
+    active_count.reverse()
+    
     data = {
         "total_count": total_count,
         "mon_count": mon_count,
         "day_count": day_count,
+        "active_time": active_time,
+        "active_count": active_count
     }
 
     return render_template("admin/user_count.html", data=data)
