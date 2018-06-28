@@ -7,7 +7,8 @@ from info.utils.common import user_login_data
 from info.utils.response_code import RET
 from . import index_blu
 from flask import session
-from manage import app
+# from manage import app
+from flask import current_app
 
 
 @index_blu.route('/news_list')
@@ -96,6 +97,6 @@ def index():
 
 @index_blu.route('/favicon.ico')
 def favicon():
-    return app.send_static_file('news/favicon.ico')
+    return current_app.send_static_file('news/favicon.ico')
 
 
