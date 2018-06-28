@@ -92,7 +92,7 @@ def user_count():
 
     active_time.reverse()
     active_count.reverse()
-    
+
     data = {
         "total_count": total_count,
         "mon_count": mon_count,
@@ -102,4 +102,38 @@ def user_count():
     }
 
     return render_template("admin/user_count.html", data=data)
+
+
+@admin_blu.route('/user_list')
+def user_list():
+    try:
+        page =int(request.args.get("page", 1))
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    user_list = []
+    cur_page = 1
+    total_page = 1
+
+    try:
+        paginate = User.query.filter(User.is_admin==False).paginate(page, 10)
+        user_list = paginate.items
+        total_page = paginate.pages
+        cur_page = paginate.page
+    except Exception as e:
+        current_app.logger.error(e)
+
+    user_dict_li = []
+    for user in user_list:
+        user_dict_li.append(user.to_dict())
+
+    data = {
+        "user_dict_li": user_dict_li,
+        "cur_page": cur_page,
+        "total_page": total_page
+    }
+
+    return render_template('admin/user_list.html', data=data)
+
 
