@@ -144,6 +144,8 @@ def user_list():
 def news_review():
 
     page = request.args.get("page", 1)
+    keywords = request.args.get("keywords", None)
+
     try:
         page = int(page)
     except Exception as e:
@@ -153,8 +155,12 @@ def news_review():
     news_list = []
     cur_page = 1
     total_page = 1
+    filters = [News.status != 0]
+    if keywords:
+        filters.append(News.title.contains(keywords))
+
     try:
-        paginate = News.query.filter(News.status != 0).order_by(News.create_time.desc()).paginate(page, 10, False)
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page, 10, False)
         news_list = paginate.items
         cur_page = paginate.page
         total_page = paginate.pages
