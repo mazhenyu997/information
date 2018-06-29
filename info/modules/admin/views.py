@@ -3,9 +3,11 @@ import time
 
 from info.modules.admin import admin_blu
 from flask import render_template, request, jsonify, current_app, session, redirect, url_for, g
-from info.models import User
+from info.models import User, News
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
+
+
 
 
 @admin_blu.route('/index')
@@ -137,3 +139,36 @@ def user_list():
     return render_template('admin/user_list.html', data=data)
 
 
+@admin_blu.route('/news_review')
+@user_login_data
+def news_review():
+
+    page = request.args.get("page", 1)
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    news_list = []
+    cur_page = 1
+    total_page = 1
+    try:
+        paginate = News.query.filter(News.status != 0).order_by(News.create_time.desc()).paginate(page, 10, False)
+        news_list = paginate.items
+        cur_page = paginate.page
+        total_page = paginate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_li = []
+    for news in news_list:
+        news_dict_li.append(news.to_review_dict())
+    print(news_dict_li)
+    data = {
+        "total_page": total_page,
+        "current_page": cur_page,
+        "news_dict_li": news_dict_li
+    }
+    return render_template('admin/news_review.html', data=data)
