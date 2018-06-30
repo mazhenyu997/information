@@ -1,13 +1,12 @@
 from datetime import datetime, timedelta
 import time
 
+from info import db
 from info.modules.admin import admin_blu
 from flask import render_template, request, jsonify, current_app, session, redirect, url_for, g
 from info.models import User, News
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
-
-
 
 
 @admin_blu.route('/index')
@@ -56,6 +55,7 @@ def login():
     return redirect('/admin/index')
 
 
+# 用户统计
 @admin_blu.route("/user_count")
 def user_count():
     total_count = 0
@@ -106,6 +106,7 @@ def user_count():
     return render_template("admin/user_count.html", data=data)
 
 
+# 用户列表
 @admin_blu.route('/user_list')
 def user_list():
     try:
@@ -139,13 +140,12 @@ def user_list():
     return render_template('admin/user_list.html', data=data)
 
 
+# 待审核列表
 @admin_blu.route('/news_review')
-@user_login_data
 def news_review():
 
-    page = request.args.get("page", 1)
-    keywords = request.args.get("keywords", None)
-
+    page = request.args.get("p", 1)
+    keywords = request.args.get("keywords", "")
     try:
         page = int(page)
     except Exception as e:
@@ -153,28 +153,90 @@ def news_review():
         page = 1
 
     news_list = []
-    cur_page = 1
+    current_page = 1
     total_page = 1
-    filters = [News.status != 0]
-    if keywords:
-        filters.append(News.title.contains(keywords))
 
     try:
-        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page, 10, False)
-        news_list = paginate.items
-        cur_page = paginate.page
-        total_page = paginate.pages
+        filters = [News.status != 0]
+        # 如果有关键词
+        if keywords:
+            # 添加关键词的检索选项
+            filters.append(News.title.contains(keywords))
 
+        # 查询
+        paginate = News.query.filter(*filters) \
+            .order_by(News.create_time.desc()) \
+            .paginate(page, 10, False)
+
+        news_list = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
     except Exception as e:
         current_app.logger.error(e)
 
-    news_dict_li = []
+    news_dict_list = []
     for news in news_list:
-        news_dict_li.append(news.to_review_dict())
-    print(news_dict_li)
+        news_dict_list.append(news.to_review_dict())
     data = {
-        "total_page": total_page,
-        "current_page": cur_page,
-        "news_dict_li": news_dict_li
-    }
+               "total_page": total_page,
+               "current_page": current_page,
+               "news_li": news_dict_list
+            }
     return render_template('admin/news_review.html', data=data)
+
+
+@admin_blu.route('/news_review_detail/<int:news_id>')
+def news_review_detail(news_id):
+
+    news = None
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+
+    if not news:
+        return render_template('admin/news_review_detail.html', data={"data": "未查询到此新闻"})
+
+    data = {
+        "news": news.to_dict()
+    }
+    return render_template('admin/news_review_detail.html', data=data)
+
+
+@admin_blu.route('/news_review_action', methods=["POST"])
+def news_review_action():
+    news_id = request.json.get("news_id")
+    action = request.json.get("action")
+
+    if not all([news_id, action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    if action not in ["accept", "reject"]:
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        news = News.query.get(news_id)
+
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询错误")
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="未查询到数据")
+
+    if action == "accept":
+        news.status = 0
+
+    elif action == "reject":
+        reason = request.json.get("reason")
+        if not reason:
+            return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+        news.reason = reason
+        news.status = -1
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="数据保存失败")
+    return jsonify(errno=RET.OK, errmsg="操作成功")
