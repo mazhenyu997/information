@@ -287,48 +287,100 @@ def news_edit():
     return render_template('admin/news_edit.html', data=data)
 
 
-@admin_blu.route('/news_edit_detail')
+@admin_blu.route('/news_edit_detail', methods=["POST", "GET"])
 def news_edit_detail():
-    news_id = request.args.get("news_id")
-    if not news_id:
-        abort(404)
-    try:
-        news_id = int(news_id)
-    except Exception as e:
-        current_app.logger.error(e)
-        return render_template('admin/news_edit_detail.html', err_msg="参数错误")
+    if request.method == "GET":
 
-    try:
-        news = News.query.get(news_id)
-    except Exception as e:
-        current_app.logger.error(e)
-        return render_template('admin/news_edit_detail.html', err_msg="查询错误")
+        news_id = request.args.get("news_id")
+        if not news_id:
+            abort(404)
+        try:
+            news_id = int(news_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return render_template('admin/news_edit_detail.html', err_msg="参数错误")
 
-    if not news:
-        return jsonify(errno=RET.NODATA, errmsg="未查询到数据")
+        try:
+            news = News.query.get(news_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return render_template('admin/news_edit_detail.html', err_msg="查询错误")
 
-    # 查询分类数据
-    categories = []
+        if not news:
+            return jsonify(errno=RET.NODATA, errmsg="未查询到数据")
 
-    try:
-        categories = Category.query.all()
-    except Exception as e:
-        current_app.logger.error(e)
-        return render_template('admin/news_edit_detail.html', err_msg="查询错误")
+        # 查询分类数据
+        categories = []
 
-    category_dict_li = []
-    for category in categories:
-        cate_dict = category.to_dict()
-        if category.id == news.category_id:
-            cate_dict["is_selected"] = True
-        category_dict_li.append(cate_dict)
+        try:
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.error(e)
+            return render_template('admin/news_edit_detail.html', err_msg="查询错误")
 
-    category_dict_li.pop(0)
+        category_dict_li = []
+        for category in categories:
+            cate_dict = category.to_dict()
+            if category.id == news.category_id:
+                cate_dict["is_selected"] = True
+            category_dict_li.append(cate_dict)
 
-    data = {
-        "news": news.to_dict(),
-        "categories": category_dict_li
+        category_dict_li.pop(0)
 
-    }
-    return render_template('admin/news_edit_detail.html', data=data)
+        data = {
+            "news": news.to_dict(),
+            "categories": category_dict_li
+
+        }
+        return render_template('admin/news_edit_detail.html', data=data)
+
+    elif request.method == "POST":
+        news_id = request.form.get("news_id")
+        title = request.form.get("title")
+        digest = request.form.get("digest")
+        content = request.form.get("content")
+        index_image = request.files.get("index_image")
+        category_id = request.form.get("category_id")
+
+        if not all([title, digest, content, category_id]):
+            return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+        news = None
+        try:
+            news = News.query.get(news_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+
+        if not news:
+            return jsonify(errno=RET.NODATA, errmsg="未查询到新闻数据")
+        '''
+        if index_image:
+            try:
+                index_image = index_image.read()
+            except Exception as e:
+                current_app.logger.error(e)
+                return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+
+            # 2. 将标题图片上传到七牛
+            try:
+                key = storage(index_image)
+            except Exception as e:
+                current_app.logger.error(e)
+                return jsonify(errno=RET.THIRDERR, errmsg="上传图片错误")
+            news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
+        '''
+
+        news.title = title
+        news.digest = digest
+        news.content =content
+        news.category_id = category_id
+
+        try:
+            db.session.commit()
+        except Exception as e:
+            current_app.logger.error(e)
+            db.session.rollback()
+            return jsonify(errno=RET.DBERR, errmsg="保存数据失败")
+
+        return jsonify(errno=RET.OK, errmsg="OK")
 
