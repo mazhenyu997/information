@@ -3,8 +3,8 @@ import time
 
 from info import db
 from info.modules.admin import admin_blu
-from flask import render_template, request, jsonify, current_app, session, redirect, url_for, g
-from info.models import User, News
+from flask import render_template, request, jsonify, current_app, session, redirect, url_for, g, abort
+from info.models import User, News, Category
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
 
@@ -285,4 +285,50 @@ def news_edit():
                "news_li": news_dict_list
             }
     return render_template('admin/news_edit.html', data=data)
+
+
+@admin_blu.route('/news_edit_detail')
+def news_edit_detail():
+    news_id = request.args.get("news_id")
+    if not news_id:
+        abort(404)
+    try:
+        news_id = int(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template('admin/news_edit_detail.html', err_msg="参数错误")
+
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template('admin/news_edit_detail.html', err_msg="查询错误")
+
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="未查询到数据")
+
+    # 查询分类数据
+    categories = []
+
+    try:
+        categories = Category.query.all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template('admin/news_edit_detail.html', err_msg="查询错误")
+
+    category_dict_li = []
+    for category in categories:
+        cate_dict = category.to_dict()
+        if category.id == news.category_id:
+            cate_dict["is_selected"] = True
+        category_dict_li.append(cate_dict)
+
+    category_dict_li.pop(0)
+
+    data = {
+        "news": news.to_dict(),
+        "categories": category_dict_li
+
+    }
+    return render_template('admin/news_edit_detail.html', data=data)
 

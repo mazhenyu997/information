@@ -34,7 +34,7 @@
                         <td calss="tleft"><a href="/news/{{ news.id }}" target="_blank">{{ news.title }}</a></td>
                         <td>{{ news.clicks }}</td>
                         <td>{{ news.create_time }}</td>
-                        <td><a href="#" class="edit">编辑</a></td>
+                        <td><a href="{{ url_for("admin.news_edit_detail", news_id=news.id) }}" class="edit">编辑</a></td>
                     </tr>
                 {% endfor %}
 
