@@ -1,5 +1,5 @@
 from info import db
-from info.models import News, Comment, CommentLike
+from info.models import News, Comment, CommentLike, User
 from info.modules.news import news_blu
 from flask import render_template, current_app, abort, g, request, jsonify
 
@@ -227,4 +227,54 @@ def comment_like():
         return jsonify(errno=RET.DBERR, errmsg="数据操作失败")
 
     return jsonify(errno=RET.OK, errmsg="ok")
+
+
+# 关注和取消关注
+@news_blu.route('/followed_user', methods=["POST"])
+@user_login_data
+def followed_user():
+
+    user = g.user
+
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="请先登陆")
+
+    user_id = request.json.get("user_id")
+    action = request.json.get("action")
+
+    if not all([user_id, action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    if action not in ("follow", "unfollow"):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        other = User.query.get(user_id)
+
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+
+    if not other:
+        return jsonify(errno=RET.NODATA, errmsg="查询失败")
+
+    if action == "follow":
+        if other not in user.followed:
+
+            user.followed.append(other)
+        else:
+            return jsonify(errno=RET.DATAEXIST, errmsg="已关注")
+
+    else:
+        if other in user.followed:
+            user.followed.remove(other)
+        else:
+            return jsonify(errno=RET.DATAEXIST, errmsg="未关注")
+
+    return jsonify(errno=RET.OK, errmsg="操作成功")
+
+
+
+
+
 
