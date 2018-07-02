@@ -661,7 +661,7 @@ body{
     color:#666;
     border-radius:4px;
     font-size:14px;
-    margin:0px 5px;
+    margin:0px auto;
     background:url(../images/collect_icons.png) 15px -73px no-repeat #e6e6e6;
     position:relative;
     overflow:hidden;
@@ -689,7 +689,7 @@ body{
 }
 
 .collected:hover .over{
-    left:33px;
+    left: 33px;
     top:8px;
 }
 
@@ -702,7 +702,7 @@ body{
     color:#666;
     border-radius:4px;
     font-size:14px;
-    /*margin:0px 5px;*/
+    margin:0px 5px;
     background:url(../images/focus_icons.png) 15px -73px no-repeat #e6e6e6;
     position:relative;
     overflow:hidden;

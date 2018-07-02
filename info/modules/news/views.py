@@ -10,6 +10,7 @@ from info.utils.response_code import RET
 @news_blu.route("/<int:news_id>")
 @user_login_data
 def news_detail(news_id):
+    user = g.user
     # 右侧新闻的逻辑
     news_right_list = []
     try:
@@ -60,12 +61,18 @@ def news_detail(news_id):
                 comment_dict["is_like"] = True
         comment_dict_li.append(comment_dict)
 
+    is_followed = False
+
+    if news.user and user:
+        if news.user in user.followed:
+             is_followed = True
     data = {
         "news": news.to_dict(),
         "is_collected": is_collected,
         "user": g.user.to_dict() if g.user else None,
         "news_dict_li": news_dict_list,
-        "comments": comment_dict_li
+        "comments": comment_dict_li,
+        "is_followed": is_followed
     }
     return render_template('news/detail.html', data=data)
 

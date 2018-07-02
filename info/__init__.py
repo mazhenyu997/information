@@ -51,6 +51,22 @@ def create_app(config_name):
     # 添加自定义过滤器
     app.add_template_filter(do_index_class, "index_class")
 
+    # 注册蓝图
+    from info.modules.index import index_blu
+    app.register_blueprint(index_blu)
+
+    from info.modules.passport import passport_blu
+    app.register_blueprint(passport_blu)
+
+    from info.modules.news import news_blu
+    app.register_blueprint(news_blu)
+
+    from info.modules.profile import profile_blu
+    app.register_blueprint(profile_blu)
+
+    from info.modules.admin import admin_blu
+    app.register_blueprint(admin_blu)
+
     from info.utils.common import user_login_data
 
     @app.errorhandler('/404')
@@ -68,22 +84,6 @@ def create_app(config_name):
         csrf_token = generate_csrf()
         response.set_cookie("csrf_token", csrf_token)
         return response
-
-    # 注册蓝图
-    from info.modules.index import index_blu
-    app.register_blueprint(index_blu)
-
-    from info.modules.passport import passport_blu
-    app.register_blueprint(passport_blu)
-
-    from info.modules.news import news_blu
-    app.register_blueprint(news_blu)
-
-    from info.modules.profile import profile_blu
-    app.register_blueprint(profile_blu)
-
-    from info.modules.admin import admin_blu
-    app.register_blueprint(admin_blu)
 
     return app
 
