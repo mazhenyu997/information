@@ -279,3 +279,40 @@ def news_list():
     data = {"news_list": news_dict_li, "total_page": total_page, "current_page": current_page}
     return render_template('news/user_news_list.html', data=data)
 
+
+@profile_blu.route('/user_follow')
+@user_login_data
+def user_follow():
+    p = request.args.get('p', 1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+    user = g.user
+
+    follow = []
+
+    cur_page = 1
+    total_page = 1
+    try:
+        paginate = user.followed.paginate(p, 4, False)
+        follows = paginate.items
+        cur_page = paginate.page
+        total_page = paginate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+
+    user_dict_li = []
+
+    for follow_user in follows:
+        user_dict_li.append(follow_user.to_dict())
+
+    data = {
+        "user": user_dict_li,
+        "total_page": total_page,
+        "cur_page": cur_page
+
+    }
+    return render_template('news/user_follow.html', data=data)
