@@ -4,9 +4,9 @@ import time
 
 from info import db
 from info.constants import QINIU_DOMIN_PREFIX
-from info.models import Category, News
+from info.models import Category, News, User
 from info.modules.profile import profile_blu
-from flask import render_template, g, redirect, request, jsonify, current_app
+from flask import render_template, g, redirect, request, jsonify, current_app, abort
 
 from info.utils.common import user_login_data
 from info.utils.image_storage import storage
@@ -316,3 +316,32 @@ def user_follow():
 
     }
     return render_template('news/user_follow.html', data=data)
+
+
+@profile_blu.route('/other_info')
+@user_login_data
+def other_info():
+    user = g.user
+    other_id = request.args.get("user_id", None)
+    if not other_id:
+        abort(404)
+    try:
+        other_user = User.query.get(other_id)
+    except Exception as e:
+        current_app.logger.error(e)
+
+    if not other_user:
+        abort(404)
+
+    is_followed =False
+
+    if other_user and user:
+        if other_user in user.followed:
+            is_followed = True
+
+    data = {
+        "is_followed": is_followed,
+        "user": user.to_dict() if user else None,
+        "other_info": other_user
+    }
+    return render_template('news/other.html', data=data)

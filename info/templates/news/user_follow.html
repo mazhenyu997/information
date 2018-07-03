@@ -15,11 +15,11 @@
         <ul class="card_list_con">
             {% for follow in data.user %}
                 <li class="author_card card_list">
-                    <a href="#" target="_blank" class="author_pic"><img src="{% if follow.avatar_url %}
+                    <a href="{{ url_for("profile.other_info") }}?user_id={{ follow.id }}" target="_blank" class="author_pic"><img src="{% if follow.avatar_url %}
                     {{ follow.avatar_url }}
                     {% else %}../../static/news/images/cat.jpg
                     {% endif %}" alt="author_pic"></a>
-                    <a href="#" target="_blank" class="author_name">{{ follow.nick_name }}</a>
+                    <a href="{{ url_for("profile.other_info") }}?user_id={{ follow.id }}" target="_blank" class="author_name">{{ follow.nick_name }}</a>
                     <div class="author_resume">{{ follow.signature }}</div>
                     <div class="writings"><span>总篇数</span><b>{{ follow.news_count }}</b></div>
                     <div class="follows"><span>粉丝</span><b>{{ follow.followers_count }}</b></div>
