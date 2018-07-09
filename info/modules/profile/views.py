@@ -2,7 +2,7 @@ import os
 import random
 import time
 
-from info import db
+from info import db, constants
 from info.constants import QINIU_DOMIN_PREFIX
 from info.models import Category, News, User
 from info.modules.profile import profile_blu
@@ -345,3 +345,55 @@ def other_info():
         "other_info": other_user
     }
     return render_template('news/other.html', data=data)
+
+
+@profile_blu.route('/other_news_list')
+def other_news_list():
+    try:
+        other_id = request.args.get('user_id')
+        page = int(request.args.get('p'))
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        other_user = User.query.get(other_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询错误")
+
+    if not other_user:
+        return jsonify(errno=RET.NODATA, errmsg="当前用户不存在")
+
+    try:
+        paginate = other_user.news_list.paginate(page, constants.USER_COLLECTION_MAX_NEWS, False)
+        news_list= paginate.items
+        cur_page = paginate.page
+        total_page = paginate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DATAERR, errmsg="分页错误")
+
+    news_dict_li = []
+
+    for news in news_list:
+        news_dict_li.append(news.to_basic_dict())
+
+    data = {
+        "news_list": news_dict_li,
+        "total_page": total_page,
+        "current_page": cur_page
+
+    }
+
+    return jsonify(errno=RET.OK, errmsg="OK", data=data)
+
+
+
+
+
+
+
+
+
